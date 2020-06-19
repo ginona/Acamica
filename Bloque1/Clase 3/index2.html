@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acamica - Inscripción</title>
+</head>
+<body>
+    <header>
+        <div><img id="banner" alt="Acámica" class="imagen" src="https://miro.medium.com/max/11386/1*ccvLx8oMQif13-d7quLmwg.png" height="50" width="1000"></div>
+        <br>
+        <h3>Formulario de Inscripción</h3>
+    </header>
+    <main>
+        <form action="index3.html" target="_blank" id="form1">
+            <section>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" required pattern="[A-Za-z ]+" placeholder="Nombre">
+                <br>
+                <label for="surname">Apellido:</label>
+                <input type="text" name="surname" id="surname" required pattern="[A-Za-z ]+" placeholder="Apellido">
+                <br>
+                <label for="mail">E-mail:</label>
+                <input type="email" name="mail" id="mail" required placeholder="example@example.com">
+                <br>
+                <label for="country">Seleccione su país de procedencia:</label>
+                <input type="text" name="country" id="country" list="country-choice" required placeholder="País">
+                <datalist id="country-choice">
+                    <option value="Argentina"></option>
+                    <option value="Venezuela"></option>
+                    <option value="Brasil"></option>
+                    <option value="Colombia"></option>
+                </datalist>
+            </section>
+            <section>
+                <label for="career">A qué carrera deseas inscribirte?</label>
+                <select name="career" id="career" required>
+                    <option valu></option>
+                    <option value="UXUI">UX/UI</option>
+                    <option value="Datascience">Data Science</option>
+                    <option value="DWFS">Desarrollo web full stack</option>
+                    <option value="FEA">Front End Avanzado</option>
+                </select>
+                <br>
+                <label for="mod">Modalidad:</label>
+                <br>
+                <input type="radio" id="pre" name="mod" value="prec" required>
+                <label for="prec">Presencial</label><br>
+                <input type="radio" id="online" name="mod" value="online" required>
+                <label for="online">Online</label><br>
+                <br>
+                <input type="checkbox" id="work" name="work" value="true">
+                <label for="work">¿Trabajas actualmente?</label><br>
+                <br>
+                <label for="phone">Número telefónico:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                <br>
+                <label for="descrip">Descripción Personal:</label>
+                <br>
+                <textarea maxlength="50" name="descrip" id="descrip" cols="30" rows="10" placeholder="Ingrese una descripción"></textarea>
+            </section>
+
+            <input type="reset" value="Reiniciar">
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+    </main>
+    <footer>
+        <small>&copy; Copyright 2020, Acámica</small>
+    </footer>
+</body>
+</html>

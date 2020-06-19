@@ -1,0 +1,14 @@
+Js sirve para realizar una acción sin necesidad de recargar todo el documento html
+
+Berners-lee
+
+HTML lenguaje de marcas de hipertexto, basado en etiquetas y atributos que cada navegador se encarga de interpretar para mostrar el contenido jerarquizado. HTML es simplemente una forma de mostrarnos las cosas
+
+apps estáticas: el contenido ya está cargado
+
+las dinámicas varía de acuerdo a acciones
+head es información que no visualiza el usuario
+como el title, es básiscamente para que el navegador tome decisiones sobre cómo presentar el doc al user. También encontramos los meta que en un pequeño curso de marketing digital, sirven para los navegadores y si los usamos bien aparecerá con un cierto nivel de importancia a la hora de buscar determinadas cosas.
+
+https://aprende-web.net/html/html8_2.php
+https://es.learnlayout.com/display.html

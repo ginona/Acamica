@@ -1,0 +1,38 @@
+.imgborde { 
+    border: 4px inset;
+    padding: 5px;
+    width: 480px;
+    height: 150px;
+  }
+  .imgt{
+    border: 4px inset;
+    padding: 5px;
+    width: 480px;
+    height: 360px;
+  }
+
+  body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #E27D60;
+    text-align: center;
+    color: white;
+  }
+
+  h1{
+    font-size: xx-large;
+    color: teal;
+
+    }
+
+  h5{
+      font-size: 15px;
+    }
+
+  #date{
+      font-style: italic;
+      font-size: small;
+      }
+
+  #descr{
+      font-size: medium;
+     }

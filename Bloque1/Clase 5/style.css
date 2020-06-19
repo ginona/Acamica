@@ -1,0 +1,86 @@
+nav{
+    border-bottom: 35px solid red;
+    position: sticky;
+    top: 0;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    font-size: 11px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+
+}
+nav ul li a:hover {
+    background-color: black;
+    margin-top: 0;
+    padding-bottom: 12px;
+}
+.integr ul{
+    text-align: center;
+}
+.integr ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.imagen{
+    text-align: center;
+}
+.spotify{
+    text-align: center;
+}
+
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+body{
+    border: grey solid 5px;
+    padding: 10%;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}
+ 
+p{
+    color: grey;
+    font-size: 16px;
+} 
+
+.container{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.historia{
+    width: 600px;
+    height: 600px;
+    float: left;
+}
+
+.disco{
+    width: 600px;
+    height: 600px;
+    float: right;
+} 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primera página</title>
+        <meta name="copyright" content="© 2020 Acámica">
+        <meta name="keywords" content="html, acamica, front-end, globant"/>
+
+        <style>
+            body{background-color: grey; font-family: Verdana;}
+            h1{color: white; text-align: center;}
+            h6{color: white; text-align: center;}
+            p{background-color: black; color: white; text-align: center;}
+
+            img.imagen{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div><img id="banner" alt="Acámica" class="imagen" src="Images/acamica.png"></div>
+        <h1 id="nombre">Gino Nacchio</h1>
+
+        <h6 id="fechaNac">09/09/1994</h6>
+        <p id="descripcion">Me llamo Gino Nachio, tengo 25 años y vivo en Tucumán, Argentina.</p>
+    </body>
+</html>
+
+<script>
+    banner = document.getElementById('banner');
+    banner.addEventListener("click", function(){
+        alert("Bienvenido a mi sitio web")
+    });
+
+    descripcion = document.getElementById('descripcion');
+    descripcion.addEventListener("mouseenter", function(){
+        descripcion.style.color = "black";
+        descripcion.style.backgroundColor = "white";
+    });
+
+    descripcion.addEventListener("mouseout", function(){
+        descripcion.style.color = "white";
+        descripcion.style.backgroundColor = "black";
+    })
+
+    fechaNac = document.getElementById('fechaNac');
+
+    document.getElementById('fechaNac').onmouseover = function(){mouseOver()};
+    document.getElementById('fechaNac').onmouseout = function(){mouseOut()};
+
+
+    function mouseOver(){
+        fechaNac.style.color = "blue";
+    }
+
+    function mouseOut(){
+        fechaNac.style.color = "white";
+    }
+</script>

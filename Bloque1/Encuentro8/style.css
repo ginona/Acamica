@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul#menu-topo {
+  margin: 0 auto;
+  padding: 10px 0;
+  list-style-type: none;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul#menu-topo li {
+  display: inline;
+  margin: 0;
+}
+
+ul#menu-topo li a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+  main {
+    margin: 5%;
+  }
+  .nav-menu {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    table-layout: fixed;
+  }
+  ul#menu-topo {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    table-layout: fixed;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+  }
+  ul#menu-topo li {
+    display: block;
+    border-bottom: 1px solid grey;
+    line-height: 3px;
+    color: #ffffff;
+  }
+  ul#menu-topo li a {
+    color: #ffffff;
+  }
+  ul#menu-topo li.hide {
+    display: none !important;
+  }
+  ul#menu-topo li:hover {
+    border-bottom: 1px solid #132f47;
+    background-color: #0b1c2a;
+  }
+  .nav-toggle-label:before {
+    color: white;
+    content: '☰';
+  }
+  .nav-toggle:checked + ul#menu-topo {
+    display: table;
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */

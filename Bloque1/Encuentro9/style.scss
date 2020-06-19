@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+.cuadrado1{
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.firstone{
+    background-color: red;
+}
+
+.secondone{
+    background-color: blue;
+}
+
+@media screen and  (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+}

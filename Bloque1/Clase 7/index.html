@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: goldenrod;
+            padding: 5px;
+            border-radius: 50%;
+            border: 25px solid #282725;
+            position: relative;
+        }
+        .numbers{
+            background-color: white;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .numbers img {
+            margin: auto;
+            width: 90%;
+        }
+        .dot{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+        }
+        .secs{
+            width: 3px;
+            height: 120px;
+            position: absolute;
+            background-color: red;
+            transform-origin: 150px 30px;
+            top: 10%;
+            left: 48.5%;
+        }
+        .min{
+            width: 2px;
+            height: 100px;
+            position: absolute;
+            background-color: white;
+            border: 2px solid #3b3636;
+            border-radius: 3px;
+            top: 20%;
+            left: 48.3%;
+            transform-origin: 150px 30px;
+        }
+        .hours{
+            width: 2px;
+            height: 50px;
+            position: absolute;
+            background-color: white;
+            border: 2px solid #3b3636;
+            border-top: 15px solid #3b3636;
+            border-radius: 4px;
+            top: 20%;
+            left: 48.5%;
+            transform-origin: 150px 30px;
+        }
+        .contenedor-seg{
+            position: absolute;
+            top:50%;
+            left: 50%;
+        }
+        .animation-sec{
+            animation: rotacion 60s infinite linear;
+        }
+        .animation-min{
+            animation: rotacion 3600s infinite linear;
+        }
+        .animation-hours{
+            animation: rotacion 43200s infinite linear;
+        }
+/* ​
+        @keyframes rotacion {
+            100%{
+                transform: rotateZ(360deg);
+            }
+        } */
+
+        @keyframes rotacion {
+            100%{
+                transform: rotateZ(360deg);
+            }
+            
+        }
+​
+    </style>
+    <title>Reloj</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="numbers center">
+            <img src="https://cssanimation.rocks/images/posts/clocks/ios_clock.svg" alt="clock">
+        </div>
+        <div class="dot"></div>
+        <div class="contenedor-seg animation-sec">
+            <div class="secs"></div>
+        </div>
+        <div class="contenedor-seg animation-min">
+            <div class="min"></div>
+        </div>
+        <div class="contenedor-seg animation-hours">
+            <div class="hours"></div>
+        </div>
+    </div>
+</body>
+</html>

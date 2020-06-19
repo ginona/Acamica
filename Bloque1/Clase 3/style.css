@@ -1,0 +1,14 @@
+body{
+    background-color: #5600ff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+.foot{
+    position: absolute;
+    bottom: 0;
+    width: 10;
+    height: 10;
+}

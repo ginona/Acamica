@@ -1,0 +1,132 @@
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    color: black;
+    
+}
+
+label{
+    input[type="checkbox"]{
+        z-index: 1;
+        position: fixed;
+        top: 10px;
+        right: 100px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        visibility: none;
+        display: none;
+
+        &:checked ~ .check{
+            background: $bg-primary;
+            box-shadow: 0 0 0 2000px $bg-secondary;
+            
+            &:before{
+                transform: translateX(-50px);
+            }
+
+            &:after{
+                transform: translateX(0px);
+            }
+        }
+
+        // &:checked ~ .container{
+        //     color: white;
+        // }
+
+    }
+}
+
+.check{
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 40px;
+    height: 20px;
+    top: 20px;
+    background: $bg-secondary;
+    cursor: pointer;
+    float: right;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    
+    &:before{
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background: $bg-primary;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        background: $bg-secondary;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transition: 0.5s;
+        transform: translateX(50px);
+
+    }
+
+}
+// input[type="checkbox"]{
+//     position: fixed;
+//     z-index: 1;
+//     top: 70px;
+//     right: 100px;
+//     cursor: pointer;
+
+//     &:after{
+//         content: 'Dark';
+//         color: $bg-primary;
+//         background: $bg-secondary;
+//         padding: 10px 20px;
+//     }
+
+//     &:checked:after{
+//         content: 'Light';
+//         color: $bg-secondary;
+//         background: $bg-primary;
+//         padding: 10px 20px;
+//     }
+
+//     &:checked ~ *{
+//     filter: invert(1);
+//     }
+
+// }
+
+
+
+.container{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: $bg-primary;
+    padding: 80px 100px;
+    
+    img{
+        max-width: 500px;
+        float: left;
+        margin: 10 px 20px 10px 0px;
+    }
+
+    // &:hover{
+    // filter: invert(1);
+    // }
+}
+
